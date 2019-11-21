@@ -91,7 +91,6 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
                 tripleCount++;
             }
         }
-        System.out.println(tripleCount);
         return array.length -tripleCount;
     }
 }
