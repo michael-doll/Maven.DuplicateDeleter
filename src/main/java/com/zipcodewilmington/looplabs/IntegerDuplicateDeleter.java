@@ -19,12 +19,9 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
         int returnArrLen = getLength(maxNumberOfDuplications);
         Integer[] returnArray = new Integer[returnArrLen];
         int returnArrIndex = 0;
-        int currentCount = 0;
+        int currentCount;
 
         for (int i = 0; i <array.length ; i++) {
-            if (returnArrIndex == returnArrLen ){
-                break;
-            }
             currentCount = 0;
             for (int j = 0; j <array.length  ; j++) {
                 if (array[i].equals(array[j])){
@@ -44,12 +41,9 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
         int returnArrLen = getLengthExact(exactNumberOfDuplications);
         Integer[] returnArray = new Integer[returnArrLen];
         int returnArrIndex = 0;
-        int currentCount = 0;
+        int currentCount;
 
         for (int i = 0; i <array.length ; i++) {
-            if (returnArrIndex == returnArrLen ){
-                break;
-            }
             currentCount = 0;
             for (int j = 0; j <array.length  ; j++) {
                 if (array[i].equals(array[j])){
